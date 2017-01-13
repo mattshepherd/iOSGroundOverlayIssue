@@ -13,6 +13,11 @@
 		24A7D7561E298DBD00D165B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24A7D7541E298DBD00D165B4 /* Main.storyboard */; };
 		24A7D7581E298DBD00D165B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A7D7571E298DBD00D165B4 /* Assets.xcassets */; };
 		24A7D75B1E298DBD00D165B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24A7D7591E298DBD00D165B4 /* LaunchScreen.storyboard */; };
+		24A7D7631E298DDD00D165B4 /* latest.gif in Resources */ = {isa = PBXBuildFile; fileRef = 24A7D7621E298DDD00D165B4 /* latest.gif */; };
+		24A7D7651E298E8200D165B4 /* test.kml in Resources */ = {isa = PBXBuildFile; fileRef = 24A7D7641E298E8200D165B4 /* test.kml */; };
+		24A7D7681E298E9900D165B4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A7D7671E298E9900D165B4 /* MapKit.framework */; };
+		24A7D7751E29910400D165B4 /* MKImageOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A7D7721E29910400D165B4 /* MKImageOverlay.m */; };
+		24A7D7761E29910400D165B4 /* MKImageOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A7D7741E29910400D165B4 /* MKImageOverlayRenderer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,13 @@
 		24A7D7571E298DBD00D165B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24A7D75A1E298DBD00D165B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24A7D75C1E298DBD00D165B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24A7D7621E298DDD00D165B4 /* latest.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = latest.gif; sourceTree = "<group>"; };
+		24A7D7641E298E8200D165B4 /* test.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.kml; sourceTree = "<group>"; };
+		24A7D7671E298E9900D165B4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		24A7D7711E29910400D165B4 /* MKImageOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKImageOverlay.h; sourceTree = "<group>"; };
+		24A7D7721E29910400D165B4 /* MKImageOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKImageOverlay.m; sourceTree = "<group>"; };
+		24A7D7731E29910400D165B4 /* MKImageOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKImageOverlayRenderer.h; sourceTree = "<group>"; };
+		24A7D7741E29910400D165B4 /* MKImageOverlayRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKImageOverlayRenderer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A7D7681E298E9900D165B4 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +57,7 @@
 			children = (
 				24A7D74A1E298DBD00D165B4 /* iOSGroundOverlayIssue */,
 				24A7D7491E298DBD00D165B4 /* Products */,
+				24A7D7661E298E9900D165B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +72,7 @@
 		24A7D74A1E298DBD00D165B4 /* iOSGroundOverlayIssue */ = {
 			isa = PBXGroup;
 			children = (
+				24A7D7701E29910400D165B4 /* MKImageOverlay */,
 				24A7D74E1E298DBD00D165B4 /* AppDelegate.h */,
 				24A7D74F1E298DBD00D165B4 /* AppDelegate.m */,
 				24A7D7511E298DBD00D165B4 /* ViewController.h */,
@@ -66,6 +81,7 @@
 				24A7D7571E298DBD00D165B4 /* Assets.xcassets */,
 				24A7D7591E298DBD00D165B4 /* LaunchScreen.storyboard */,
 				24A7D75C1E298DBD00D165B4 /* Info.plist */,
+				24A7D7641E298E8200D165B4 /* test.kml */,
 				24A7D74B1E298DBD00D165B4 /* Supporting Files */,
 			);
 			path = iOSGroundOverlayIssue;
@@ -74,9 +90,29 @@
 		24A7D74B1E298DBD00D165B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				24A7D7621E298DDD00D165B4 /* latest.gif */,
 				24A7D74C1E298DBD00D165B4 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24A7D7661E298E9900D165B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24A7D7671E298E9900D165B4 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24A7D7701E29910400D165B4 /* MKImageOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				24A7D7711E29910400D165B4 /* MKImageOverlay.h */,
+				24A7D7721E29910400D165B4 /* MKImageOverlay.m */,
+				24A7D7731E29910400D165B4 /* MKImageOverlayRenderer.h */,
+				24A7D7741E29910400D165B4 /* MKImageOverlayRenderer.m */,
+			);
+			path = MKImageOverlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +176,9 @@
 			files = (
 				24A7D75B1E298DBD00D165B4 /* LaunchScreen.storyboard in Resources */,
 				24A7D7581E298DBD00D165B4 /* Assets.xcassets in Resources */,
+				24A7D7651E298E8200D165B4 /* test.kml in Resources */,
 				24A7D7561E298DBD00D165B4 /* Main.storyboard in Resources */,
+				24A7D7631E298DDD00D165B4 /* latest.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +189,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A7D7751E29910400D165B4 /* MKImageOverlay.m in Sources */,
 				24A7D7531E298DBD00D165B4 /* ViewController.m in Sources */,
+				24A7D7761E29910400D165B4 /* MKImageOverlayRenderer.m in Sources */,
 				24A7D7501E298DBD00D165B4 /* AppDelegate.m in Sources */,
 				24A7D74D1E298DBD00D165B4 /* main.m in Sources */,
 			);
